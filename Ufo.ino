@@ -1,4 +1,4 @@
-
+//Led Pins
 int Led_Oben = 12;
 int Led_Unten = 13;
  
@@ -9,10 +9,9 @@ void setup ()
   pinMode (Led_Oben, OUTPUT); 
   pinMode (Led_Unten, OUTPUT);
  
-
+  //Led Test
   oben(HIGH);
-  unten(HIGH);
-  
+  unten(HIGH); 
   delay(2000);
   oben(LOW);
   unten(LOW);
@@ -38,13 +37,13 @@ void loop () //Hauptprogrammschleife
    delay(200);
 }
 
-void oben(boolean value){
+void oben(boolean value){        //Funktion für Led in der Kuppel
 
     digitalWrite(Led_Oben, value);
   
 }
 
-void unten(boolean value){
+void unten(boolean value){      // Funktion für Beam-Led
 
     digitalWrite(Led_Unten, value);
   
